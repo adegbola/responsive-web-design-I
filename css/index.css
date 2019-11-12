@@ -1,3 +1,445 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
 
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* Your code starts here! */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    margin-top: 35px;
+    display: flex;
+}
+
+header nav a {
+    margin-right: 65px;
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 6px;
+}
+
+.bottomSection .column {
+    /*  display: inline-block; */
+    width: 290px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.bottomSection {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.topSection {
+    display: flex;
+    border-top: 1.5px solid black;
+    margin-top: 5.0rem;
+}
+
+h2 {
+    margin: 1.2rem;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.topSection .column {
+    /*  display: inline-block; */
+    width: 47%;
+    margin-right: 30px;
+}
+
+.middleSection .middle-img {
+    margin-top: 1.2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.container header nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+/*  .container header nav a {
+    display: inline-block;
+    margin-left: 3.0rem;
+    color: gray;
+    text-decoration: none;
+}
+ */
+
+
+/* .container header nav img {
+    display: inline-block;
+    margin-left: 3.0rem;
+    margin-top: 1.0rem;
+}  */
+
+.heading .text {
+    display: inline-block;
+    font-size: 80px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0px 75px;
+}
+
+.heading img {
+    display: inline-block;
+    width: 350px;
+}
+
+.heading .text .getStarted {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    padding: 6px 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 0%;
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact p {
+    padding-top: 10px;
+}
+
+
+/* Start Services Content */
+
+.service-container .services-content h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.services-content {
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.service-container .services-text {
+    margin-bottom: 20px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-right: 25px;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 40px;
+}
+
+button {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    width: 10rem;
+}
+
+.middle-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.bottom-container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.services-info {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.facts ul li {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bottomSec {
+    border-bottom: 2px solid black;
+}
+
+img.logo1 {
+    padding-bottom: 20px;
+}
+
+
+/* End Services Content */
+
+
+/* Media Queries */
+
+@media(max-width:800px) {
+    .container {
+        width: 800px;
+    }
+    .heading img {
+        display: none;
+    }
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        max-width: 30%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+    nav {
+        display: flex;
+    }
+    nav img {
+        display: flex;
+        align-items: flex-start;
+        vertical-align: 5px;
+    }
+    @media screen and (max-width:500px) {
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            background-color: aquamarine;
+        }
+        .heading img {
+            display: none;
+        }
+        header {
+            display: flex;
+        }
+        nav {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        nav a {
+            margin: 10px;
+            text-align: center;
+            font-size: 2rem;
+            border-bottom: 1px solid black;
+            align-content: space-between;
+            width: 500px;
+        }
+        .topSection {
+            display: flex;
+            width: 420px;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .middleSection,
+        .middle-img {
+            width: 420px;
+            margin: 0 auto;
+        }
+        .bottomSection {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottomSection .column {
+            width: 420px;
+        }
+        .topSection .column {
+            width: 420px;
+        }
+    }
+}
